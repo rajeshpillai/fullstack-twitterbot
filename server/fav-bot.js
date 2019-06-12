@@ -5,8 +5,8 @@ var T = new Twitter(config);
 
 // Set up your search parameters
 var params = {
-  q: '#nodejs, #100DaysOfCode, #301DaysOfCode, #JavaScript, #ReactJS',
-  count: 20,
+  q: '#100DaysOfCode, #301DaysOfCode, #CodeNewbie, #girlswhocode',
+  count: 5,
   result_type: 'recent',
   lang: 'en'
 }
