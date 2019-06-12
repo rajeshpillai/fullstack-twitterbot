@@ -25,9 +25,15 @@ function getQuote(callback) {
 
 function postTweet(tweet) {
   console.log(tweet);
-  T.post("statuses/update", { status: tweet }, function (err, data, response) {
+  let content = tweet + ' #100DaysOfCode, #301DaysOfCode, #CodeNewbie';
+  T.post("statuses/update", { status: content }, function (err, data, response) {
     console.log(data);
+    return data;
   });
 }
 
-getQuote(postTweet);
+//getQuote(postTweet);
+
+module.exports = {
+  randomQuotes: () => getQuote(postTweet)
+}
