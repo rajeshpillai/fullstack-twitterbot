@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 
+import axios from 'axios';
+
 function App() {
+  useEffect(() => {
+    async function fetchData() {
+      const response = await axios({
+        url: '/timeline',
+        method: 'get'
+      });
+      return response;
+    }
+    let timelines = fetchData();
+    console.log(timelines);
+  });
+
   return (
     <div className="App">
       <header className="App-header">

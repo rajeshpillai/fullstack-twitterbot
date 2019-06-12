@@ -13,7 +13,7 @@ var params = {
 
 var retweet = function () {
   var params = {
-    q: '#100DaysOfCode, #301DaysOfCode, #CodeNewbie, #girlswhocode', // Hashtags to search tweets within
+    q: '#100DaysOfCode, #301DaysOfCode, #CodeNewbie, #girlswhocode, #coding', // Hashtags to search tweets within
     result_type: 'recent',  // recent
     lang: 'en'
   }
